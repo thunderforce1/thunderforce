@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-    <audio controls autoplay>
-  <source src="Animatic sings happeh holleeedayz 4.mp3" type="audio/mp3">
-</audio>
+
+
+     <script>
+            function pageLoaded() {
+                // Speed up the audio 3x so the test doesn't take 10 seconds.
+                var audio = document.getElementById("audio");
+                audio.playbackRate = 3;
+                audio.play();
+            }
+        </script>
+    </head>
+    <body onload="pageLoaded()">
+        <audio id="audio" src="Animatic sings happeh holleeedayz 4.mp3" />
+    </body>
     
 <head>
     <meta charset="UTF-8">
