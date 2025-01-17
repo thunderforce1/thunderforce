@@ -2,8 +2,8 @@
 
 
 <html lang="en">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {font-family: Arial;}
 
@@ -46,19 +46,24 @@ body {font-family: Arial;}
 </style>
 </head>
 <body>
+
+<h2>Character List</h2>
+
+
 <div class="tab">
-  <button class="tablinks" onclick="openpages(event, 'Pages')">PAGES</button>
+  <button class="tablinks" onclick="openCity(event, 'London')">Pages</button>
 </div>
 
-<div id="Pages" class="tabcontent">
-  <h3>London</h3>
-  <p>Character List</p>
+<div id="London" class="tabcontent">
+  <p>Balls</p>
     <p>Story</p>
-    <p>Balls</p>
+        <p>HugeBalls</p>
+                <p>Character Files</p>
 </div>
+
 
 <script>
-function openpages(evt, Pages) {
+function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -72,8 +77,8 @@ function openpages(evt, Pages) {
   evt.currentTarget.className += " active";
 }
 </script>
-
-  </body>
+   
+</body>
 
   <h2> A </h2>
 
